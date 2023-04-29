@@ -8,12 +8,12 @@ import { initializeApp } from "firebase/app";
 console.log('environment variable', import.meta.env.VITE_authDomain);
 
 const firebaseConfig = {
-  apiKey: "AIzaSyCGJ-EeHlGjgNl_JIBnbFkQgby5qqECJlo",
-  authDomain: "the-news-dragon-client-c4cb0.firebaseapp.com",
-  projectId: "the-news-dragon-client-c4cb0",
-  storageBucket: "the-news-dragon-client-c4cb0.appspot.com",
-  messagingSenderId: "225404936687",
-  appId: "1:225404936687:web:4adf4873b07e3a454e961a",
+apiKey:import.meta.env.VITE_APIKEY , 
+authDomain:import.meta.env.VITE_AUTHDOMAIN , 
+projectId:import.meta.env.VITE_PROJECTID , 
+storageBucket:import.meta.env.VITE_STORAGEBUCKET , 
+messagingSenderId:import.meta.env.VITE_MESSAGINGSENDERID ,
+appId:import.meta.env.VITE_APPID , 
 };
 
 // Initialize Firebase
