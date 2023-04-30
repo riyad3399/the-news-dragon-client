@@ -43,11 +43,11 @@ const NavigationBar = () => {
             </Nav>
             <Nav>
               {user && (
-                <FaUserCircle style={{ fontSize: "2.1rem" }}></FaUserCircle>
+                user.photoURL ? <img className="rounded-circle" style={{ height: '40px' }} src={user.photoURL} alt="" /> : <FaUserCircle style={{ fontSize: "2.1rem" }}></FaUserCircle>
               )}
 
               {user ? (
-                <Button onClick={handleLogOut} variant="success">Logout</Button>
+                <Button className="ms-2" onClick={handleLogOut} variant="success">Logout</Button>
               ) : (
                 <Link to='/login'>
                   <Button variant="primary">Login</Button>
